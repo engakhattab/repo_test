@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main(char *argv[])
+{
+    // Start at argv[0]
+    char **arg = argv;
+
+    // Loop through the arguments until a NULL pointer is encountered
+    while (*arg != NULL)
+    {
+        printf("%s\n", *arg);
+        arg++;
+    }
+
+    return 0;
+}
+
